@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+ 
+<html lang="fr"> 
+ 
+  <head> 
+ 
+    <meta charset="UTF-8" /> 
+ 
+    <title>TP JavaScript</title> 
+ 
+  </head> 
+ 
+  <body> 
+ 
+    <h1>Exercice 7</h1> 
+    <h1> Calculatrice de cercle</h1> 
+    <div id="rayon"></div> 
+    <div id="perimetre"></div> 
+    <div id="surface"></div>  
+ 
+    <!-- Votre contenu HTML ici --> 
+ 
+    <script>
+      const PI = Math.PI;
+      let rayon = window.prompt("Donnez le rayon du cercle");
+      rayon = Number(rayon);
+      let perimetre,surface;
+      perimetre = 2 * PI * rayon;
+      surface = PI * rayon * rayon;
+      Rayon = document.getElementById("rayon");
+      Perimetre = document.getElementById("perimetre");
+      Surface = document.getElementById("surface");
+
+      Rayon.innerHTML = `Rayon : ${rayon} cm`;
+      Perimetre.innerHTML = `Périmètre : ${perimetre.toFixed(2)} cm`;
+      Surface.innerHTML = `Surface : ${surface.toFixed(2)} cm^2`;
+
+ 
+      // Votre code JavaScript ici 
+ 
+    </script> 
+ 
+  </body> 
+ 
+</html>
